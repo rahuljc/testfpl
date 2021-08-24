@@ -9,8 +9,8 @@ class PlayersController extends Controller
 {
     public function index()
     {
-        $teams = Player::all();
-        return response()->json($teams);
+        $players = Player::all();
+        return view('players.index', $players);
     }
 
     public function create()

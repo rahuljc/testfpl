@@ -1,0 +1,78 @@
+PHP Framework Problem Statement (Time Duration – 1 Day)
+
+Context: Our system has the data of the soccer teams and its players.
+
+Structure of Team:
+identifier
+name
+logoUri
+
+Structure of Player:
+identifier
+firstName
+lastName
+imageUri
+
+Story 1: As an admin I should be able to login to the admin portal and should be able to manage teams and players.
+
+Acceptance Criteria:
+
+1. Login screen should be available and user should be able to login
+
+2. After login user should be able to do CRUD operations for teams and players.
+
+3. Each player should be assigned to a team.
+
+
+
+Story 2: As a developer I want to expose API endpoints which provides the list of teams and players of a specific team.
+
+Acceptance Criteria:
+
+1) Should have an API endpoint which fetches the teams.
+
+2) Should have an API endpoint which fetches players based on team ID.
+
+
+
+Story 3: As a user I want a list of the Teams Which are present in our system. When I click on the Team I would want to see the Team Name along with the list of players of that Team.
+
+Acceptance Criteria:
+
+1. Team list should consist of <logo>, <Team Name>
+
+2. Players list should consist of <image>, <lastName> <firstName>
+
+3. Should use the API endpoints created in story 2.
+
+4. User should be able to view team and its players without login.
+
+
+
+Expectation:
+
+1. Use OOPs Concepts wherever necessary.
+
+2. Preferred to use  Laravel framework.
+
+3. Code as if it can be deployed to production (secured from sql injection and other types of hacks).
+
+Evaluation Criteria:
+
+This Application will be evaluated on the following based on this priority.
+
+1. Coding / Design Style (Object Oriented)
+
+2. UI / UX (Concentrate on the UI and UX part, you can use Bootstrap, and it needs to be responsive)
+
+3. Logic
+
+4. Output
+
+5. Testability (Unit Test Cases and TDD)
+
+Note:
+
+Code transparently. In case if you use any API/code from the internet, please mention it upfront or else please do not use anything from the internet.
+
+When you are done, ZIP your answer and upload it with the button below.
