@@ -20,8 +20,8 @@ Route::get('/', function () {
 });
 
 
-Route::get('/teams', [TeamsController::class, 'index'])->name('teams');
-Route::get('/players', [PlayersController::class, 'index'])->name('players');
+Route::resource('/teams', TeamsController::class)->middleware(['auth']);
+Route::resource('/players', PlayersController::class)->middleware(['auth']);
 
 Route::get('/dashboard', function () {
     return view('dashboard');
